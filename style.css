@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /*The font style format for Poppins*/
+
+/*Styling for the entire page*/
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    background-image: url("https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/*The links will all be highlighted green*/
+section a{
+    color: rgb(13, 156, 13);
+}
+
+/*The nav bar styling*/
+.navbar{
+    color: white;
+    background-color: black;
+    width: 100vw;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 9999;
+}
+
+/*The hierarchy of the styling list for the nav bar*/
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li{
+    padding: 5px;
+    display: inline-block;
+    padding: 20px;
+}
+
+/*The links styling */
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+/*The header styling biography*/
+.title{
+    text-align: center;
+}
+
+.title-name{
+    margin-top: -20px;
+    text-transform: uppercase;
+}
+
+/*The h1 styling for the header*/
+.title h1{
+    display: inline-block;
+    font-size: 4.5em;
+    padding: 8px;
+}
+
+.title-header-first{
+    color: rgb(90, 90, 90);
+}
+
+/*The style for the job description */
+.title h3{
+    margin-top: -50px;
+    font-size: 3.5em;
+    text-decoration: underline;
+}
+
+.title a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.title span, p{
+    font-size: 1.3em;
+}
+
+/*The style of the personal portfolio*/
+.website{
+    margin-top: -20px;
+}
+
+.underline{
+    border: 1px solid black;
+}
+
+/*All the sections styled in here*/
+.mysections{
+    border-bottom: 1em solid rgb(23, 44, 53);
+    margin: 0px 100px 0px 100px;
+    padding-bottom: 100px;
+}
+
+/*The h1 for all the section style*/
+.mysections h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold; 
+    text-align: center;
+}
+
+/*The bio containing the personal information*/
+.profile{
+    border: 0.7em solid rgb(23, 44, 53);
+    border-radius: 2em;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, 
+    rgb(38, 50, 56),
+    rgb(49, 84, 100),
+    rgb(0, 68, 100));; /*The background of the container of the biography*/
+}
+
+.technicalskills{
+    padding: 10px;
+}
+
+.technicalskills-header{
+    text-align: center;
+}
+
+.skills{
+    padding: 10px;
+}
+
+.softskills{
+    font-size: 1.2em;
+}
+
+.softskills li{
+    padding: 5px;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.softskills ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: green; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block;/* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.education{
+    font-size: 1.2em;
+}
+
+.education li{
+    list-style-type: none;
+}
+
+.education ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: green; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block;/* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.education th{
+    border: 1px solid black;
+    text-align: start;
+    font-style: italic;
+
+}
+
+.project table th{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/*The break and space between the rows of the projects*/
+.project table .space{
+    padding: 30px;
+}
+
+.project table td{
+    padding: 15px;
+    max-width: 650px;
+    text-align: center;
+}
+
+.project table .line{
+    border-bottom: 0.5em solid rgb(23, 44, 53);
+}
+
+.reference table{
+    font-size: 1.1em;
+}
+
+.reference table td{
+    padding-left: 25px;
+}
